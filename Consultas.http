@@ -1,0 +1,8 @@
+//GET http://localhost:3000/fruit/52 
+
+//GET http://localhost:3000/fruit/25
+
+GET http://localhost:3000/fruit/9
+
+//GET https://fruityvice.com/api/fruit/9
+

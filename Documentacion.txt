@@ -1,0 +1,13 @@
+DOCUMENTACIÓN
+--------------
+    REQUISITOS:
+        -PARA QUE PUEDAN RESULTAR LOS COMANDOS SIGUIENTES, DEBE ESTAR POSICIONADO EN EL DIRECTORIO
+        SISTEMAS DISTRIBUIDOS.
+        -Tener instaladas nodejs, python y dependencias necesarias.
+
+    -Crear e iniciar particiones de cache con docker compose:
+        -> docker compose up -d
+    -Iniciar los archivos (Conexion_redis_querys.js|Conexion_redis.js| Sin_redis_querys.js|Sin_redis.js):
+        -> node ./Controllers/(ARCHIVO)
+    -Graficar los datos guardados de los tiempos de consulta(libreria matplotlib.pyplot instalada):
+        -> python3 ./Datos/graficar.py

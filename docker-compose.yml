@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+    redis1:
+      image: bitnami/redis:7.0.10
+      ports:
+        - "6379:6379"
+      environment:
+        #Se deja sin contraseña
+        - ALLOW_EMPTY_PASSWORD=yes
+        #Se manda a llamar a estos comandos
+      command: /opt/bitnami/scripts/redis/run.sh --maxmemory 1mb --maxmemory-policy allkeys-lfu
+      
+
+    redis2:
+      image: bitnami/redis:7.0.10
+      ports: 
+        - "6380:6379"
+      environment:
+        - ALLOW_EMPTY_PASSWORD=yes
+      command: /opt/bitnami/scripts/redis/run.sh --maxmemory 1mb --maxmemory-policy allkeys-lfu 
+    redis3:
+      image: bitnami/redis:7.0.10
+      ports:
+        - "6381:6379"
+      environment:
+        - ALLOW_EMPTY_PASSWORD=yes
+      command: /opt/bitnami/scripts/redis/run.sh --maxmemory 1mb --maxmemory-policy allkeys-lfu
